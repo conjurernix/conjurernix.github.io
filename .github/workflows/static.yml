@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -22,17 +22,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: delaguardo/setup-clojure@12.1
-        with:
-          bb: latest
-      - run: bb quickblog render
-      - uses: actions/upload-pages-artifact@v2
-        with:
-          path: public/
   # Single deploy job since we're just deploying
   deploy:
     environment:
@@ -42,11 +31,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - uses: delaguardo/setup-clojure@12.1
+        with:
+          bb: latest
+      - run: bb quickblog render!
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Upload entire repository
           path: public/
       - name: Deploy to GitHub Pages
         id: deployment
