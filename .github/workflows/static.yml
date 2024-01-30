@@ -31,11 +31,12 @@ jobs:
         with:
           bb: latest
       - name: Render blogsite
-        run: bb quickblog render
+        run: bb quickblog render --out-dir docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          artifact-name: blogsite
+          path: docs
   # Single deploy job since we're just deploying
   deploy:
     environment:
