@@ -83,7 +83,7 @@ advantages over Ethereum:
   direct comparisons with other networks challenging, as definitions of "transaction" vary across different blockchain
   platforms.
 
-![High Level overview of benchmarks](https://imgur.com/a/Vz4kWPz)
+![High Level overview of benchmarks](https://i.imgur.com/zPKrpGr.png)
 
 It's important to note that transaction throughput can vary widely based on the nature of the transactions and that
 Convex's strengths lie in handling more complex transactions effectively. You should accept results with a grain
