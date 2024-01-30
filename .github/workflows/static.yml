@@ -30,7 +30,7 @@ jobs:
         with:
           bb: latest
       - run: bb quickblog render
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: public/
   # Single deploy job since we're just deploying
