@@ -1,0 +1,10 @@
+{:deps {io.github.borkdude/quickblog
+        #_"You use the newest SHA here:"
+        {:git/sha "bc75e063a609d3986ed37d5d7741e587ed1a990e"}}
+ :tasks
+ {:requires ([quickblog.cli :as cli])
+  :init     (def opts {:blog-author      "Nikolas Pafitis - conjurernix"
+                       :blog-title       "Conjuring in λisp"
+                       :blog-description "Learning the Arcane Art of Computation, one sexpr at a time"})
+  quickblog {:doc  "Start blogging quickly! Run `bb quickblog help` for details."
+             :task (cli/dispatch opts)}}}
