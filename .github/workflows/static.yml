@@ -35,8 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          artifact-name: blogsite
-          path: docs
+          path: docs/
   # Single deploy job since we're just deploying
   deploy:
     environment:
