@@ -32,6 +32,8 @@ jobs:
           bb: latest
       - name: Render blogsite
         run: bb quickblog render --out-dir docs
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
