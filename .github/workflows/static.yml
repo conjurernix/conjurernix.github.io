@@ -35,12 +35,12 @@ jobs:
         with:
           bb: latest
       - run: bb quickblog render!
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+#      - name: Setup Pages
+#        uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
+          # Upload public/ directory as artifact
           path: public/
       - name: Deploy to GitHub Pages
         id: deployment
