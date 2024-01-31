@@ -6,14 +6,15 @@ Tags: clojure,convex,blockchain,decentralised,dapps,crdt,lattice,fp,distributed,
 
 The Convex network introduces a different approach to decentralized technology. It combines a lattice-based structure
 with Conflict-Free Replicated Data Types (CRDTs), diverging from the usual blockchain model. This structure is of
-particular interest to developers in the Clojure community, offering a new way of building decentralized applications (dApps).
+particular interest to developers in the Clojure community, offering a new way of building decentralized applications or
+dApps.
 
 ### Mission and Purpose
 
 Convex presents itself as a platform aimed at fostering open and fair digital economic systems, a goal that might
 resonate well with the Clojure community, known for its preference for innovative and ethical tech solutions. The
-platform sets itself apart from some of the more controversial aspects often associated with blockchain technologies,
-seeking to offer a more positive and constructive contribution to the digital economy.
+platform sets itself apart from some of the more controversial aspects often associated with blockchain and
+decentralised technologies, seeking to offer a more positive and constructive contribution to the digital economy.
 
 Functioning as a decentralized network and execution engine, Convex could be viewed as a variant of a "Stateful
 Internet," where the network not only hosts but also securely executes code and data. This design positions Convex as a
@@ -110,13 +111,13 @@ The functional programming paradigm, central to Convex Lisp, is pivotal in enhan
 smart contract development. By focusing on immutability and stateless functions, Convex provides a robust foundation for
 building decentralized applications:
 
-- **Immutable State**: Ensures that once data is written to the blockchain, it remains unaltered, fostering trust and
+- **Immutable State**: Ensures that once data is written to the lattice, it remains unaltered, fostering trust and
   integrity in transactions and contracts.
 - **Predictable Function Execution**: Stateless functions enable consistent and reliable behavior, vital for the
   deterministic nature of smart contracts.
 - **Enhanced Security and Reliability in Contract Logic**: The use of pure functions, where the output is determined
   solely by the input, eliminates side effects and offers a higher degree of security, crucial for financial and
-  contractual transactions on the blockchain.
+  contractual transactions on the network.
 - **Program Verification**: The functional programming paradigm facilitates formal verification of code, a critical
   aspect for smart contracts, where security and reliability are paramount.
 
@@ -145,7 +146,7 @@ contracts, further pushing the boundaries of decentralized technology.
    governance. This adaptability facilitates the evolution of governance protocols in real time, a significant
    improvement over the static nature of contracts in EVM-based chains, where updates are cumbersome and time-consuming.
 
-2. **Real-Time Multiplayer Gaming**: Convex is ideal for creating blockchain-based multiplayer games. Unlike traditional
+2. **Real-Time Multiplayer Gaming**: Convex is ideal for creating decentralised multiplayer games. Unlike traditional
    blockchains, Convex can efficiently process and update complex game states on-chain, offering a seamless gaming
    experience. This is exemplified by a Minecraft-like voxel game, where entire game worlds are managed on-chain,
    demonstrating a level of interactivity and real-time updates not feasible on EVM-based chains.
